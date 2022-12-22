@@ -184,19 +184,20 @@ footer {
 footer p {
     color: var(--white);
     margin: 2rem;
+    font-size: clamp(25px, 1rem, 100px);
 }
 
 
 
 
 footer svg {
-    width: 2rem;
-    height: 2rem;
+    width: clamp(50px, 2rem, 200px);
+    height: clamp(50px, 2rem, 200px);
     position: relative;
     float: right;
     transition: 0.6s;
     fill: var(--white);
-    margin: 1rem;
+    margin: clamp(10px, 2rem, 100px);
     margin-top: 2rem;
     z-index: 2;
 }
