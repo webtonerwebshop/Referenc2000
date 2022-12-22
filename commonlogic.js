@@ -31,3 +31,11 @@ function reveal () {
         }*/
     }
 }
+
+
+
+window.addEventListener("scroll", upicondisplay);
+
+function upicondisplay () {
+    
+}
