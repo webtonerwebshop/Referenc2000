@@ -208,6 +208,11 @@ footer svg:hover {
 }
 
 
+#upicon {
+    opacity: 0;
+}
+
+
 upicon a svg {
     fill: var(--red);
     background-color: white;
