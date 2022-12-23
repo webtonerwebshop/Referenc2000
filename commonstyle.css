@@ -238,6 +238,9 @@ upicon a svg {
     footer p {
         font-size: clamp(8px, 0.7rem, 60px);
         margin: 0.8rem;
-
     }
+
+    upicon a svg {
+        bottom: 3rem;
+        right: 3rem;
 }
