@@ -65,7 +65,7 @@ header {
 
 
 header a img {
-    width: clamp(300px, 15vw, 600px);
+    width: clamp(200px, 15vw, 400px);
     height: auto;
 }
 
@@ -210,6 +210,7 @@ footer svg:hover {
 
 #upicon {
     opacity: 0;
+    transition: 0.3s ease;
 }
 
 

@@ -37,9 +37,6 @@ function reveal () {
 window.addEventListener("scroll", upicondisplay);
 
 
-
-
-
 function upicondisplay () {
     if (window.scrollY > 150) {
         document.getElementById("upicon").style.opacity = 1;
