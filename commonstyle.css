@@ -201,8 +201,8 @@ upicon a svg {
     fill: var(--red);
     background-color: white;
     position: fixed;
-    bottom: 3rem;
-    right: 3rem;
+    bottom: 4.2rem;
+    right: 4.2rem;
     width: 2rem;
     height: 2rem;
     border-radius: 3rem;
