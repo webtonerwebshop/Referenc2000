@@ -3,10 +3,10 @@ var openorclosed = 0;
 function navdisplay() {
     openorclosed+=1;
     if (openorclosed % 2 == 1) {
-        document.getElementById("mobile_navbar").style.opacity = 1;
+        document.getElementById("mobile_navbar").style.display = "flex";
     }
     else {
-        document.getElementById("mobile_navbar").style.opacity = 0;
+        document.getElementById("mobile_navbar").style.display = "none";
     }
 }
 
