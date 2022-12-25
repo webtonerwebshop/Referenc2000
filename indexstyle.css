@@ -1,0 +1,27 @@
+#segment1 {
+    display: flex;
+
+}
+
+#segment1 img {
+    width: 40vw;
+    height: auto;
+    position: relative;
+    top: -17vh;
+    right: -9vw;
+}
+
+#segment1 #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+} 
+
+#segment1 #container h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
