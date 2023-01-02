@@ -1,9 +1,9 @@
-
 h1 {
     font-size: 5rem;
-    font-weight: bold;
     text-align: center;
+    font-weight: bold;
 }
+
 
 #segment1 {
     display: flex;
@@ -70,7 +70,7 @@ h1 {
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 1.5rem;
     }
 }
 
