@@ -54,6 +54,10 @@ h1 {
     text-align: center;
 }
 
+#ourtech p {
+    text-align: justify;
+}
+
 #vandals svg {
     width: 25vw;
     height: auto;
@@ -63,6 +67,10 @@ h1 {
     #ourtech {
         display: flex;
         flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3.5rem;
     }
 }
 
