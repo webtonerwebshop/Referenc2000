@@ -43,11 +43,11 @@
 
 @keyframes changingtextanim {
     0% {
-        content: "kérdésed van.";
+        content: "kérdése van.";
     }
 
     33% {
-        content: "árajánlatot kérnél.";
+        content: "árajánlatot kérne.";
     }
     
     66% {

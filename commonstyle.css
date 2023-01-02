@@ -24,8 +24,12 @@ body {
     color: var(--white);
     width: 99.5vw;
     margin: 0;
-    background-color: var(--dark);
+    /*background-color: var(--dark);*/
     overflow-x: hidden;
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+
 }
 
 

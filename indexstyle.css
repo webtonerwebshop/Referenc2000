@@ -1,3 +1,10 @@
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 #segment1 {
     display: flex;
 
@@ -23,5 +30,39 @@
     text-align: center;
 }
 
+#ourtech {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 2%;
+}
 
+#ourtech div {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ourtech svg {
+    fill: white;
+    width: 15vw;
+    height: auto;
+}
+
+#ourtech h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#vandals svg {
+    width: 25vw;
+    height: auto;
+}
+
+@media (max-width: 1279px) {
+    #ourtech {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
