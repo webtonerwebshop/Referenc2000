@@ -112,3 +112,34 @@ body section {
   .card:nth-child(even) > .info > .title::before {
     right: -3.4rem;
   }
+
+
+.text-and-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.tl-image {
+    width: 30%;
+    height: auto;
+}
+
+
+@media (max-width: 1279px) {
+    .text-and-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tl-image {
+        width: 90%;
+        height: auto;
+    }
+
+    .card {
+        width: 80vw;
+      }
+    
+}
