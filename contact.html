@@ -99,13 +99,34 @@
 
         <div id="contactinfo">
 
-            <div id="changingtext_container">
+            <div id="contactform">
+                <form action="contact.php" method="post">
+                    <label for="name">Név:</label> <br>
+                    <input type="text" id="name" name="name" placeholder="Név">
+                    <br>
+
+                    <label for="email">Email:</label> <br>
+                    <input type="text" id="email" name="email" placeholder="Email cím">
+                    <br>
+
+                    <label for="message">Üzenet:</label> <br>
+                    <input type="text" id="message" name="message" placeholder="Üzenet" rows="5">
+                    <br>
+
+                    <input type="submit" id="submit" value="Elküld">
+
+                </form>
+
+            </div>
+
+
+            <!--<div id="changingtext_container">
                 <p>Keress minket, ha<br>
                 <span></span></p>
 
 
 
-            </div>
+            </div>-->
 
 
 
