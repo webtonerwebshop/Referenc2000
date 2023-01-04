@@ -1,5 +1,49 @@
-* {
-    overflow: hidden;
+@keyframes loadanim {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes logoanim {
+    0% {
+
+    }
+}
+
+.loadanim {
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.loadanim img {
+    width: 100%;
+    height: 100%;
+    animation: loadanim 5s;
+}
+
+
+#loadlogo {
+    width: 50vw;
+    height: auto;
 }
 
 h1 {
