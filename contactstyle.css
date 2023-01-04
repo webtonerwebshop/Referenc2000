@@ -145,6 +145,7 @@
     border: 0.1rem solid var(--white);
     box-sizing: border-box;
     padding: 0.5rem;
+    color: white;
 }
 
 #contactform input[type=text]:focus {
