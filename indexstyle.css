@@ -34,6 +34,7 @@ h1 {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     padding: 2%;
+    margin-top: -2rem;
 }
 
 #ourtech div {
@@ -81,7 +82,7 @@ h1 {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     #ourtech div {

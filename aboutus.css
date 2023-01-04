@@ -113,12 +113,22 @@ body section {
     right: -3.4rem;
   }
 
+.card:nth-child(even) > .info > .text-and-img {
+    flex-direction: row-reverse;
+}
+
+.card:nth-child(even) > .info > .text-and-img p {
+    padding-left: 2rem;
+}
+
+
 
 .text-and-img {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
+
 
 
 .tl-image {
@@ -141,5 +151,6 @@ body section {
     .card {
         width: 80vw;
       }
+
     
 }
