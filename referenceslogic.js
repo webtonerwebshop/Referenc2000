@@ -21,7 +21,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }*/
-
+/*
 
 const slideshow = document.getElementById("slideshow");
 const slides = slideshow.getElementsByClassName("slide");
@@ -73,4 +73,4 @@ if (currentSlide === 0) {
 
 
 
-let slides = 1;
+let slides = 1;*/
