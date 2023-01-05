@@ -175,7 +175,7 @@ h1 {
     }
 
     h1 {
-        font-size: 3.3rem;
+        font-size: 3.1rem;
     }
 
     #ourtech div {
@@ -220,6 +220,7 @@ h1 {
         position: relative;
         top: -60vh;
         right: -45vw;
+        overflow: hidden;
     }
     
     #segment1 #container {
