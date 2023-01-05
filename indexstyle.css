@@ -70,6 +70,7 @@ h1 {
     position: relative;
     top: -17vh;
     right: -9vw;
+    overflow: hidden;
 }
 
 #segment1 #container {
@@ -223,7 +224,6 @@ h1 {
         position: relative;
         top: -60vh;
         right: -45vw;
-        overflow: hidden;
     }
     
     #segment1 #container {
