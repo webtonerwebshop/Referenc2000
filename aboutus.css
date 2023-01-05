@@ -19,6 +19,7 @@ body section {
   .card {
     position: relative;
     width: 50vw;
+
   }
   
   /* setting padding based on even or odd */
