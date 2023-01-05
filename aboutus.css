@@ -1,5 +1,7 @@
 
-
+main {
+    margin-top: 2rem;
+}
 
 body section {
     display: flex;
