@@ -145,6 +145,10 @@ body section {
         flex-direction: column;
     }
 
+    .text-and-img p {
+        width: 100%;
+    }
+
     .tl-image {
         width: 90%;
         height: auto;
