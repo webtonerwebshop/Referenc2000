@@ -1,4 +1,75 @@
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
 
+
+section div {
+    box-shadow: rgba(0, 0, 0, 0.4) 0.5rem 0.5rem 0.3rem;
+    background-color: rgb(44, 44, 44);
+    border-radius: 2rem;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+section p {
+    width: 85%;
+    padding: 5% 7.5% 0 7.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 main {
     margin-top: 2rem;
 }
@@ -160,4 +231,4 @@ body section {
       }
 
     
-}
+}*/
