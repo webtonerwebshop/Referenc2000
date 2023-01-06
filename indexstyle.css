@@ -199,6 +199,13 @@ h1 {
     padding: 1rem;
 }
 
+
+
+#ourtech img {
+    width: 90%;
+}
+
+
 #vandals svg {
     width: 25vw;
     height: auto;
@@ -219,7 +226,10 @@ h1 {
     #ourtech {
         display: flex;
         flex-direction: column;
+        width: 90%;
     }
+
+
 
     h1 {
         font-size: 3rem;
@@ -236,9 +246,12 @@ h1 {
     }
 
 
+
     #services {
         display: flex;
         flex-direction: column;
+        width: 90%;
+        margin: 0 4%;
     }
 
     
