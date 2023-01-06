@@ -230,5 +230,10 @@
     width: 80vw;
 }
 
+#email p {
+    display: inline-block;
+    width: 85%;
+}
+
 
 }
