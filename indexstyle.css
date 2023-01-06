@@ -59,7 +59,7 @@
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: bold;
     margin: 0;
@@ -137,7 +137,6 @@ h1 {
 #services p {
     padding: 0 1rem 0 1rem;
     font-size: 1.5rem;
-    text-align: justify;
     padding: 5%;
 }
 
@@ -147,17 +146,21 @@ h1 {
     margin: 1rem;
     box-shadow: rgba(0, 0, 0, 0.4) 0.5rem 0.5rem 0.3rem;
 
-    shadow
+}
+
+
+
+#ourtech-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
 
 
-
-
-
-
 #ourtech {
+    width: 75%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     padding: 2%;
@@ -165,25 +168,35 @@ h1 {
 }
 
 #ourtech div {
-    padding: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 2rem;
 }
 
 #ourtech svg {
     fill: white;
     width: 15vw;
     height: auto;
+    padding: 1rem;
 }
 
 #ourtech h1 {
     font-size: 2.5rem;
+    padding: 1.5rem 0;
+
     text-align: center;
+    background-color: rgb(34, 34, 34);
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0.5rem 0.5rem 0.3rem;
+    width: 100%;
+    margin: 0;
 }
 
 #ourtech p {
-    text-align: justify;
+    /*text-align: justify;*/
+    padding: 1rem;
 }
 
 #vandals svg {
