@@ -278,7 +278,8 @@ h1 {
         height: auto;
         position: relative;
         top: -60vh;
-        right: -42vw;
+        right: -50vw;
+        overflow: hidden;
     }
     
     #segment1 #container {
