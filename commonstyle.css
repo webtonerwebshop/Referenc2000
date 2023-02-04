@@ -1,0 +1,132 @@
+:root {
+    --black: #000000;
+    --light: #bcb397;
+    --darkgreen: #163121;
+    --hovercolor: #ffffff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--darkgreen);
+    padding: 0;
+    margin: 0;
+}
+
+nav * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu, .submenu {
+    list-style: none;
+    margin: 0;
+}
+
+.item a {
+    text-decoration: none;
+    color: var(--light);
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.item {
+    padding: 0rem;
+    width: 100%;
+    text-align: center;
+}
+
+
+.item a:hover {
+    color: var(--hovercolor);
+    transition: 0.4s ease-in-out;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu li a {
+    display: block;
+    padding: 1rem;
+}
+
+.submenu li a {
+    padding: 1rem;
+}
+
+
+.active .item {
+    display: block;
+}
+
+
+
+
+.submenu-active .submenu {
+    display: block;
+}
+
+
+
+
+
+.subitem a {
+    padding: 1rem;
+}
+
+
+.toggle {
+    fill: var(--light);
+    width: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+}
+
+
+.downicon svg {
+    fill: var(--light);
+    height: 0.7rem;
+    width: auto;
+    transition: 0.6s ease;
+}
+
+@keyframes downanim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+ a:hover > span svg {
+    fill: var(--hovercolor);
+    transition: 0.6s ease-in;
+    animation: downanim 0.6s;
+}
+
+
+.submenu {
+    display: none;
+}
+
+
+.has-submenu {
+    cursor: pointer;
+}
