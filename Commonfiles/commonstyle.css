@@ -271,8 +271,7 @@ main {
     width: 100%;
     height: auto;
     padding: 0;
-    /*margin: 7.7rem 0 0 0;*/
-    margin-top: 20rem;
+    margin: 7.7rem 0 0 0;
 }
 
 
@@ -293,7 +292,7 @@ footer::before,
 .curve-before-after::after,
 .curve-before::before,
 .curve-after::after {
-    content: url("Commonfiles/standard_curve.svg");
+    content: url("standard_curve.svg");
     width: 100%;
     height: auto;
     position: absolute;
@@ -332,7 +331,8 @@ footer::before {
 
 .card {
     width: 80%;
-    height: 30rem;
+    height: auto;
+    min-height: 30rem;
     box-shadow: rgba(0, 0, 0, 0.4) 0.5rem 0.5rem 0.5rem;
     border-radius: 2rem;
     margin: 2rem;
@@ -340,7 +340,11 @@ footer::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.1s ease-in;
 }
+
+
+
 
 
 .light {
@@ -353,10 +357,40 @@ footer::before {
     color: var(--light);
 }
 
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 90%;
+    padding: 1.5rem;
+    overflow: hidden;
+
+}
 
 
 
+.card:hover .cardImage img {
+    transform: scale(1.1);
+}
 
+
+.photo {
+    
+    overflow: hidden;
+
+
+}
+  
+  img {
+    transition: transform 0.25s;
+    width: 100%;
+
+  }
+  
+  .card:hover > .photo-container .photo img {
+    transform: scale(1.1);
+  }
 
 
 
@@ -589,7 +623,7 @@ upicon a svg {
     }
 
     .card {
-        height: 50vh;
+        min-height: 50vh;
     }
 
 }
