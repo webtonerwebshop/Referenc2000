@@ -63,13 +63,15 @@ section a {
         flex-direction: column;
     }
 
-    .gallery div img {
-        height: auto;
-        width: 100%;
-    }
 
     main {
         margin-top: 10rem;
+    }
+
+    .gallery div img {
+        height: auto;
+        width: 100%;
+        max-width: none;
     }
 
 }

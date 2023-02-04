@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
   $message = $_POST['message'];
 
   // Set the recipient email address
-  $to = 'webtonerwebshop@gmail.com';
+  $to = 'kapcsolat@referenc2000.hu';
 
   // Set the email subject
   $subject = 'New message from contact form';
