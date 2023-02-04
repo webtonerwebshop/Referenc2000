@@ -296,4 +296,9 @@ nav * {
         margin: 1rem;
     }
 
+    .item a, .subitem a {
+        font-size: 2.5rem;
+    }
+
+
 }
