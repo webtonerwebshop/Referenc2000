@@ -1,4 +1,4 @@
-var openorclosed = 1;
+var openorclosed = 0;
 
 function navdisplay() {
     openorclosed+=1;
@@ -11,7 +11,7 @@ function navdisplay() {
 }
 
 
-var openorclosed_rooms = 1;
+var openorclosed_rooms = 0;
 
 function navdisplay_rooms() {
     openorclosed_rooms+=1;
@@ -25,7 +25,7 @@ function navdisplay_rooms() {
 
 
 
-var openorclosed_services = 1;
+var openorclosed_services = 0;
 
 function navdisplay_services() {
     openorclosed_services+=1;

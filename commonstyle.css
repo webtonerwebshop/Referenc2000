@@ -119,6 +119,9 @@ nav * {
     display: none;
 }
 
+#navbar {
+    display: none;
+}
 
 .has-submenu {
     cursor: pointer;
