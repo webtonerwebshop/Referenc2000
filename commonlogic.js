@@ -1,3 +1,5 @@
+//Menu and submenus hide function
+
 var openorclosed = 0;
 
 function navdisplay() {
@@ -34,5 +36,47 @@ function navdisplay_services() {
     }
     else {
         document.getElementById("services").style.display = "none";
+    }
+}
+
+
+
+//Upicon displayment
+
+window.addEventListener("scroll", upicondisplay);
+
+
+function upicondisplay () {
+    if (window.scrollY > 150) {
+        document.getElementById("upicon").style.opacity = 1;
+    }
+    else {
+        document.getElementById("upicon").style.opacity = 0;
+    }
+}
+
+
+
+//Reveal items
+
+
+window.addEventListener("scroll", reveal);
+
+function reveal () {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++){
+
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 50;
+
+        if (revealTop <windowHeight - revealPoint){
+            reveals[i].classList.add("active");
+        }
+        /*else {
+            reveals[i].classList.remove("active");
+
+        }*/
     }
 }
