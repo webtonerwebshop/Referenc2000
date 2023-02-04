@@ -87,14 +87,7 @@ nav * {
 }
 
 
-.toggle {
-    fill: var(--light);
-    width: 3rem;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-}
+
 
 
 .downicon svg {
@@ -129,4 +122,16 @@ nav * {
 
 .has-submenu {
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1279px) {
+    .toggle {
+        fill: var(--light);
+        width: 3rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 1rem;
+    }
 }
