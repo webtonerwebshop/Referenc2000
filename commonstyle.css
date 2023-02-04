@@ -36,11 +36,7 @@ nav * {
 
 }
 
-.item {
-    padding: 0rem;
-    width: 100%;
-    text-align: center;
-}
+
 
 
 .item a:hover {
@@ -48,11 +44,7 @@ nav * {
     transition: 0.4s ease-in-out;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 
 .menu li a {
@@ -60,10 +52,7 @@ nav * {
     padding: 2rem 0 1rem 0;
 }
 
-.submenu li a {
-    padding: 0.5rem 0 0 35%;
-    text-align: left;
-}
+
 
 .submenu {
     margin-top: -1rem;
@@ -121,13 +110,123 @@ nav * {
     display: none;
 }
 
-#navbar {
-    display: none;
-}
+
 
 .has-submenu {
     cursor: pointer;
 }
+
+
+@media screen and (min-width: 1278px) {
+
+    .toggle {
+        display: none;
+    }
+
+    .has-submenu:hover > .submenu {
+        display: block;
+        transition: 0.6s ease-in-out;
+    }
+
+
+    .submenu {
+        position: absolute;
+        background-color: var(--darkgreen);
+        transition: 0.6s ease-in-out;
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        align-items: center;
+        padding-right: 1rem;
+    }
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bacchus_logo img {
+        width: auto;
+        height: 5rem;
+        margin: 1rem;
+    }
+
+    .item {
+        margin: 1.5rem;
+    }
+
+    .subitem {
+        padding-right: 2rem;
+    }
+
+}
+
+
+
+#iconbar  {
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    right: 0;
+    margin: 0.5rem;
+}
+
+
+
+
+#iconbar svg {
+    fill: var(--light);
+    width: 1.4rem;
+    height: auto;
+    transition: 0.6s ease-in-out;
+    margin: 0.25rem;
+
+}
+
+#iconbar svg:hover {
+    fill: var(--hovercolor);
+    transition: 0.6s ease-in-out;
+}
+
+#iconbar img {
+    width: 1.4rem;
+    margin: 0.25rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1279px) {
@@ -138,9 +237,63 @@ nav * {
         top: 0;
         right: 0;
         margin: 1rem;
+        display: block;
+        cursor: pointer;
     }
 
     header {
         min-height: 5rem;
     }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .item {
+        padding: 0rem;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    .submenu li a {
+        padding: 0.5rem;
+    }
+
+
+    #iconbar {
+        margin-top: 1rem;
+        margin-right: 5.5rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        
+    }
+
+
+    .bacchus_logo {
+        width: 100%;
+    }
+
+    .bacchus_logo img {
+        width: auto;
+        height: 4rem;
+        margin: 1rem;
+    }
+
 }
