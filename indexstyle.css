@@ -91,7 +91,7 @@
 
 
 .feedback {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: var(--light);
     font-weight: bold;
     position: relative;
@@ -103,7 +103,7 @@
 .feedback-name {
     text-align: right;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: var(--light);
     position: relative;
     right: 0;
