@@ -1,5 +1,8 @@
 //Menu and submenus hide function
 
+
+
+
 var openorclosed = 0;
 
 function navdisplay() {

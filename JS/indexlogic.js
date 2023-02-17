@@ -58,7 +58,7 @@ function feedbackdiplay() {
 
 window.setTimeout(feedbackdiplay(), 3000);
 
-*/
+
 
 
 document.querySelectorAll(".feedback-slider-container")[1].classList.add("visible");

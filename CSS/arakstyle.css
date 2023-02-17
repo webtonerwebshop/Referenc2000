@@ -1,0 +1,100 @@
+#openingImg {
+    width: 100%;
+    height: fit-content;
+}
+
+
+#segment1 {
+    position: relative;
+    top: -15rem;
+}
+
+
+#welcomebox {
+    background-color: var(--light);
+    height: auto;
+    width: 60%;
+    position: relative;
+    top: -5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 2rem 2rem 0;
+    padding: 1rem;
+}
+
+#welcomebox h1 {
+    color: var(--darkgreen);
+    padding: 0;
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+#roomprices, #roomdetails, #servicefees {
+    width: 70%;
+}
+
+
+#roomprices tr {
+    height: 2rem;
+}
+
+#roomprices td {
+    padding-left: 1rem;
+}
+
+#roomprices tr:nth-child(odd) {
+    background-color: var(--darkgreen);
+    color: var(--light);
+}
+
+#roomprices tr:nth-child(1) {
+    color: var(--darkgreen);
+    background-color: transparent;
+}
+
+#tablehead {
+    text-align: left;
+    padding-left: 1rem;
+    height: 1rem;
+}
+
+#roomprice-explanation {
+    font-style: italic;
+    height: 1rem;
+}
+
+small {
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-top: 1rem;
+    width: 70%;
+
+}
+
+#roomdetails tr {
+    height: 2rem;
+}
+
+#roomdetails td {
+    padding-left: 1rem;
+}
+
+#roomdetails tr:nth-child(odd) {
+    background-color: var(--light);
+    color: var(--darkgreen);
+}
+
+#roomdetails th {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+@media screen and (max-width: 1279px) {
+    small, #roomprices, #roomdetails, #servicefees {
+        width: 90%;
+    }
+}
