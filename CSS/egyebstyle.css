@@ -1,0 +1,50 @@
+#openingImg {
+    width: 100%;
+    height: fit-content;
+}
+
+
+#segment1 {
+    position: relative;
+    top: -15rem;
+}
+
+
+#welcomebox {
+    background-color: var(--light);
+    height: auto;
+    width: 60%;
+    position: relative;
+    top: -5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 2rem 2rem 0;
+    padding: 1rem;
+}
+
+#welcomebox h1 {
+    color: var(--darkgreen);
+    padding: 0;
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.card svg {
+    padding: 2rem;
+}
+
+.light svg {
+    fill: var(--darkgreen);
+}
+
+.dark svg {
+    fill: var(--light);
+}
+
+
+.card p {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}

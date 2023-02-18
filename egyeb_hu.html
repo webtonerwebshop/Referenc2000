@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacchus </title>
+    <meta name="title" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="Commonfiles/bacchus_logo.png" type="image/png">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="Commonfiles/commonstyle.css">
+    <link rel="stylesheet" href="CSS/egyebstyle.css">
+
+
+    <script src="Commonfiles/commonlogic.js"></script>
+    <script src="JS/egyeblogic.js"></script>
+
+</head>
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" class="toggle" viewBox="0 0 448 512" onclick="navdisplay()"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></li>
+
+
+
+        <a class="bacchus_logo" href="index.html">
+            <img src="Commonfiles/bacchus_logo.png">
+        </a>
+
+        <div id="navbar">
+            <ul class="menu">
+                <li class="item"><a href="index.html">Főoldal</a></li>
+                <li class="item has-submenu" onclick="navdisplay_rooms()"><a tabindex="0">Szobáink<span class="downicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.48 81.21">
+                      <path d="M16.33,0H109.14c14.34,0,21.69,17.18,11.79,27.55l-46.41,48.61c-6.42,6.73-17.16,6.73-23.58,0L4.54,27.55C-5.36,17.18,1.99,0,16.33,0Z"/>
+                  </svg></span></a>
+                    <ul class="submenu" id="rooms">
+                        <li class="subitem"><a href="standard_hu.html">Standard</a></li>
+                        <li class="subitem"><a href="superior_hu.html">Superior</a></li>
+                        <li class="subitem"><a href="superiorplusz_hu.html">Superior plusz</a></li>
+                        <li class="subitem"><a href="apartman_hu.html">Apartman</a></li>
+                    </ul>
+                </li>
+                
+                <li class="item has-submenu" onclick="navdisplay_services()"><a tabindex="0">Szolgáltatásaink<span class="downicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.48 81.21">
+                      <path d="M16.33,0H109.14c14.34,0,21.69,17.18,11.79,27.55l-46.41,48.61c-6.42,6.73-17.16,6.73-23.58,0L4.54,27.55C-5.36,17.18,1.99,0,16.33,0Z"/>
+                  </svg></span></a>
+                    <ul class="submenu" id="services">
+                        <li class="subitem"><a href="wellness_hu.html">Wellness</a></li>
+                        <li class="subitem"><a href="etterem_hu.html">Étterem</a></li>
+                        <li class="subitem"><a href="rendezvenyek_hu.html">Rendezvények lebonyolítása</a></li>
+                        <li class="subitem"><a href="egyeb_hu.html">Egyéb</a></li>
+                    </ul>
+                </li>
+
+                <li class="item"><a href="arak_hu.html">Áraink</a></li>
+
+                <li class="item"><a href="galeria_hu.html">Galéria</a></li>
+
+                <li class="item"><a href="kapcsolat_hu.html">Kapcsolat</a></li>
+
+
+            </ul>
+        </div>
+    </header>
+
+
+    <div id="iconbar">
+        <a href="https://www.facebook.com/profile.php?id=100064209871832" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+
+        <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></a>
+
+        <a href="">
+            <img src="Commonfiles/en_flag.png"></a>
+
+        <a href="">
+            <img src="Commonfiles/de_flag.png"></a>
+
+
+
+
+    </div>
+
+
+    <main>
+
+        <img id="openingImg" src="Images/Main/openingimg.png">
+
+
+        <div class="curve-after" id="segment1">
+            <div id="welcomebox">
+                <h1>Egyéb szolgáltatásaink</h1>
+            </div>
+
+
+
+        
+
+
+        <div class="cards-container">
+            <div class="cards">
+                <div class="card light">
+                    <h1>Biliárd</h1>
+                    <p>Földszinti, kisterem mellett található, 200 forintos érmékkel működik. <br>
+                    Nyitva tartás: minden nap: 12:00 – 22:00</p>
+                    <svg version="1.1" id="Réteg_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:var(--light);stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:none;}
+	.st3{font-family:'Arial';}
+	.st4{font-size:340px;}
+</style>
+<circle class="st0" cx="500" cy="500" r="497.9"/>
+<circle class="st1" cx="342.2" cy="310.2" r="220.8"/>
+<rect x="244.4" y="180.9" class="st2" width="212.4" height="290.9"/>
+<text transform="matrix(1 0 0 1 244.4378 424.3532)" class="st3 st4">8</text>
+</svg>
+
+                    
+                </div>
+                <div class="card light">
+                    <h1>Értékmegőrzés</h1>
+                    <p>A recepción ingyenesen igényelhető. Felhívjuk kedves Vendégeink figyelmét, hogy a panzió szobáiban hagyott pénzért és értékekért felelősséget nem vállalunk. Kérjük, értéktárgyaikat a recepción adják le megőrzésre.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M64 0C28.7 0 0 28.7 0 64V416c0 35.3 28.7 64 64 64H80l16 32h64l16-32H400l16 32h64l16-32h16c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM224 320a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-240a160 160 0 1 1 0 320 160 160 0 1 1 0-320zM480 221.3V336c0 8.8-7.2 16-16 16s-16-7.2-16-16V221.3c-18.6-6.6-32-24.4-32-45.3c0-26.5 21.5-48 48-48s48 21.5 48 48c0 20.9-13.4 38.7-32 45.3z"/></svg>
+                </div>
+
+                <div class="card light">
+                    <h1>Fizetési módok</h1>
+                    <p>Készpénz, és az alábbi bankkártyákat fogadja el: VISA, MasterCard, Maestro, továbbá MKB, K&H és OTP SZÉP kártya elfogadóhely.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M64 32C28.7 32 0 60.7 0 96v32H576V96c0-35.3-28.7-64-64-64H64zM576 224H0V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V224zM112 352h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16z"/></svg>
+                </div>     
+
+                <div class="card light">
+                    <h1>Gyermekágy</h1>
+                    <p>Foglaláskor jelezze.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    viewBox="0 0 325.303 325.303"
+                    xml:space="preserve">
+                <g>
+                <path d="M17.395,71.057v17.729v156.785v26.947v23.172c0,4.477,3.628,8.1,8.1,8.1c4.472,0,8.101-3.623,8.101-8.1v-15.072h258.11
+                    v15.072c0,4.477,3.629,8.1,8.101,8.1s8.1-3.623,8.1-8.1v-23.172v-26.947V88.786V71.057c10.072-3.407,17.397-12.841,17.397-24.053
+                    c0-14.056-11.438-25.491-25.497-25.491c-14.054,0-25.492,11.436-25.492,25.491c0,11.212,7.325,20.646,17.392,24.053v17.729h-50.656
+                    H84.256H33.595V71.057c10.075-3.407,17.399-12.841,17.399-24.053c0-14.056-11.438-25.491-25.5-25.491
+                    C11.438,21.513,0,32.949,0,47.004C0,58.21,7.317,67.65,17.395,71.057z M290.514,47.004c0-5.123,4.166-9.292,9.292-9.292
+                    c5.136,0,9.297,4.168,9.297,9.292c0,5.126-4.161,9.295-9.297,9.295C294.68,56.299,290.514,52.13,290.514,47.004z M291.705,264.418
+                    H33.595v-18.848h50.662h156.782h50.667V264.418z M291.705,104.986v124.385h-50.667V104.986H291.705z M224.849,229.371h-54.1
+                    V104.986h54.1V229.371z M154.549,104.986v124.385h-54.093V104.986H154.549z M84.256,104.986v124.385H33.595V104.986H84.256z
+                    M25.494,37.713c5.124,0,9.3,4.168,9.3,9.292c0,5.126-4.171,9.295-9.3,9.295c-5.131,0-9.294-4.169-9.294-9.295
+                    C16.2,41.881,20.363,37.713,25.494,37.713z"/>
+                </g>
+                </svg>
+                </div>     
+                           
+                <div class="card light">
+                    <h1>Háziállatok</h1>
+                    <p>Foglaláskor jelezze. Térítés ellenében háziállat hozható.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M309.6 158.5L332.7 19.8C334.6 8.4 344.5 0 356.1 0c7.5 0 14.5 3.5 19 9.5L392 32h52.1c12.7 0 24.9 5.1 33.9 14.1L496 64h56c13.3 0 24 10.7 24 24v24c0 44.2-35.8 80-80 80H464 448 426.7l-5.1 30.5-112-64zM416 256.1L416 480c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V364.8c-24 12.3-51.2 19.2-80 19.2s-56-6.9-80-19.2V480c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V249.8c-28.8-10.9-51.4-35.3-59.2-66.5L1 167.8c-4.3-17.1 6.1-34.5 23.3-38.8s34.5 6.1 38.8 23.3l3.9 15.5C70.5 182 83.3 192 98 192h30 16H303.8L416 256.1zM464 80a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"/></svg>
+                </div>     
+                           
+                <div class="card light">
+                    <h1>Internet</h1>
+                    <p>A Panzió egész területén WIFI-n keresztül elérhető.
+                    <br>WIFI kód: bachus123</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/></svg>
+                </div>     
+                           
+                <div class="card light">
+                    <h1>Környezetvédelem</h1>
+                    <p>Panziónk támogatja a környezetbarát programokat, kezdeményezéseket. Kérjük, nyújtson Ön is segítséget és legyen figyelemmel a túlzott víz- és energiafogyasztás környezetünkre ható negatívumaira.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z"/></svg>
+                </div>     
+                           
+                <div class="card light">
+                    <h1>Légkondicionálás</h1>
+                    <p>Térítés ellenében vehető igénybe. A klímarendszer szobánként egyedileg állítható be. Amennyiben a légkondicionálást üzemelteti, kérjük, az ajtót és az ablakokat tartsa zárva. Nem minden szobánk klimatizált. Ventillátort igény esetén tudunk biztosítani, melyet a recepción kérhet.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M258.6 0c-1.7 0-3.4 .1-5.1 .5C168 17 115.6 102.3 130.5 189.3c2.9 17 8.4 32.9 15.9 47.4L32 224H29.4C13.2 224 0 237.2 0 253.4c0 1.7 .1 3.4 .5 5.1C17 344 102.3 396.4 189.3 381.5c17-2.9 32.9-8.4 47.4-15.9L224 480v2.6c0 16.2 13.2 29.4 29.4 29.4c1.7 0 3.4-.1 5.1-.5C344 495 396.4 409.7 381.5 322.7c-2.9-17-8.4-32.9-15.9-47.4L480 288h2.6c16.2 0 29.4-13.2 29.4-29.4c0-1.7-.1-3.4-.5-5.1C495 168 409.7 115.6 322.7 130.5c-17 2.9-32.9 8.4-47.4 15.9L288 32V29.4C288 13.2 274.8 0 258.6 0zM256 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                </div>     
+                           
+                <div class="card light">
+                    <h1>Műszaki szolgáltatások</h1>
+                    <p>Amennyiben szobájában műszaki hibát észlel, kérjük, értesítse a panzió recepcióját!</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+                </div>     
+                           
+ 
+
+                <div class="card light">
+                    <h1>Parkolás</h1>
+                    <p>Panzió utcájában: díjmentes
+                        <br>Zárt parkoló: térítés ellenében</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM192 256h48c17.7 0 32-14.3 32-32s-14.3-32-32-32H192v64zm48 64H192v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V288 168c0-22.1 17.9-40 40-40h72c53 0 96 43 96 96s-43 96-96 96z"/></svg>
+                    
+                </div>
+
+                <div class="card light">
+                    <h1>Recepció</h1>
+                    <p>7:00 – 22:00 óráig áll az Önök rendelkezésre.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M216 64c-13.3 0-24 10.7-24 24s10.7 24 24 24h16v33.3C119.6 157.2 32 252.4 32 368H480c0-115.6-87.6-210.8-200-222.7V112h16c13.3 0 24-10.7 24-24s-10.7-24-24-24H256 216zM24 400c-13.3 0-24 10.7-24 24s10.7 24 24 24H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H24z"/></svg>
+                    
+                </div>
+
+                <div class="card light">
+                    <h1>Takarítás</h1>
+                    <p>A szobákat naponta igazítjuk. Extra igény esetén kérjük, forduljon a recepcióhoz. A törölközők cseréjét, annak földre dobásával jelezzék.</p>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 492.592 492.592" xml:space="preserve">
+<g>
+	<path d="M109.893,442.792c5.029,6.234,7.326,14.043,6.475,22.005c-0.852,7.961-4.756,15.11-10.982,20.132l-6.757,5.451
+		c3.115,1.397,6.545,2.213,10.18,2.213c13.794,0,24.969-11.175,24.969-24.968v-63.556l-33.241,27.125L109.893,442.792z"/>
+	<path d="M153.508,467.624c0,13.793,11.175,24.968,24.969,24.968c13.795,0,24.97-11.175,24.97-24.968V347.216l-49.939,40.751
+		V467.624z"/>
+	<path d="M143.643,108.688c30.014,0,54.349-24.325,54.349-54.339C197.992,24.334,173.657,0,143.643,0
+		c-30.015,0-54.348,24.334-54.348,54.349C89.295,84.363,113.628,108.688,143.643,108.688z"/>
+	<path d="M446.139,408.776c15.681,0,29.51,7.54,38.483,19.04c-0.078-0.776-0.015-1.545-0.129-2.322
+		c-5.278-35.872-47.882-59.314-95.144-52.356c-41.203,6.068-78.119,50.869-83.438,86.026h-16.126
+		c-8.901,0-17.216-5.142-21.185-13.103c-10.292-20.639-0.104-46.026,29.46-73.413c35.694-33.075,48.87-64.592,36.152-86.476
+		c-11.504-19.775-41.306-25.211-80.89-15.478l-37.738-116.027c-5.6-17.192-21.506-28.745-39.59-28.745H111.29
+		c-18.076,0-33.983,11.552-39.582,28.753L29.804,283.481c-4.218,12.959,2.868,26.881,15.834,31.099
+		c12.942,4.25,26.889-2.868,31.099-15.835l7.102-21.828v93.571l49.938-40.75v-11.343h13.9l54.734-44.663l5.52,16.973L74.725,399.194
+		l-12.759,10.39l-19.581-24.275c-2.667-3.31-6.58-5.028-10.525-5.028c-2.972,0.008-5.967,0.979-8.467,2.997l-10.395,8.379
+		c-2.789,2.249-4.572,5.518-4.95,9.077c-0.387,3.567,0.667,7.134,2.916,9.923l54.701,67.812c2.251,2.789,5.521,4.572,9.079,4.949
+		c0.482,0.057,0.964,0.082,1.446,0.082c3.077,0,6.064-1.053,8.476-2.996l10.389-8.379c5.808-4.685,6.716-13.192,2.032-19
+		l-19.624-24.329l12.757-10.39l130.802-106.529c3.876,2.421,8.313,3.927,12.986,3.927c2.53,0,5.109-0.394,7.64-1.221
+		c1.084-0.352,2.061-0.865,3.059-1.346c10.049-4.844,15.559-15.839,13.415-26.812c36.577-8.854,56.173-1.781,61.863,8.025
+		c8.147,13.995-4.853,39.96-33.107,66.134c-44.829,41.527-42.684,73.397-32.995,92.823c6.829,13.698,20.583,22.213,35.903,22.213
+		h16.501c2.336,9.482,11.28,15.928,21.129,14.477l74.82-11.017c-3.157-6.472-5.086-13.642-5.086-21.312
+		C397.15,430.756,419.129,408.776,446.139,408.776z"/>
+	<circle cx="446.139" cy="457.767" r="32.537"/>
+</g>
+</svg>
+                    
+                </div>
+
+                <div class="card empty"></div>
+
+
+                <div class="card light">
+                    <h1>Transzferszolgáltatás</h1>
+                    <p>Térítés ellenében igényelhető, kérésével forduljon a recepcióhoz.
+                    <br>Busz illetve vasútállomásról ingyenes, foglaláskor kérjük jelezze.
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M64 104v88h96V96H72c-4.4 0-8 3.6-8 8zm482 88L465.1 96H384v96H546zm-226 0V96H224v96h96zM592 384H576c0 53-43 96-96 96s-96-43-96-96H256c0 53-43 96-96 96s-96-43-96-96H48c-26.5 0-48-21.5-48-48V104C0 64.2 32.2 32 72 32H192 352 465.1c18.9 0 36.8 8.3 49 22.8L625 186.5c9.7 11.5 15 26.1 15 41.2V336c0 26.5-21.5 48-48 48zm-64 0a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM160 432a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
+                    
+                </div>
+
+
+
+
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="cards-container">
+        <div class="cards">
+            <div class="card empty"></div>
+
+            <div class="card dark title">
+                <h1>Egyéb tudnivalók</h1>
+            </div>
+            <div class="card empty"></div>
+
+
+
+            <div class="card dark">
+                <h1>Tűzvédelmi előírások</h1>
+                <p> 1.	A szobákban dohányozni tilos! <br>
+                    2.	A szobákban tilos égő gyertyát őrizetlenül hagyni! <br>
+                    3.	A helyiségek bejáratát eltorlaszolni tilos! <br>
+                    4.	Tűz esetén értesítendő a recepció és a tűzoltóság! <br>
+                    Tűzoltóság Tel.: 105
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M288 350.1l0 1.9H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L447.3 128.1c-12.3-1-25 3-34.8 11.7c-35.4 31.6-65.6 67.7-87.3 102.8C304.3 276.5 288 314.9 288 350.1zM453.5 163.8c19.7 17.8 38.2 37 55.5 57.7c7.9-9.9 16.8-20.7 26.5-29.5c5.6-5.1 14.4-5.1 20 0c24.7 22.7 45.6 52.7 60.4 81.1c14.5 28 24.2 58.8 24.2 79C640 440 568.7 512 480 512c-89.7 0-160-72.1-160-159.8c0-26.4 12.7-60.7 32.4-92.6c20-32.4 48.1-66.1 81.4-95.8c2.8-2.5 6.4-3.8 10-3.7c3.5 0 7 1.3 9.8 3.8zM530 433c30-21 38-63 20-96c-2-4-4-8-7-12l-36 42s-58-74-62-79c-30 37-45 58-45 82c0 49 36 78 81 78c18 0 34-5 49-15z"/></svg>
+
+                
+            </div>
+
+            <div class="card dark">
+                <h1>Panaszok kezelése</h1>
+                <p>Észrevételeivel, megjegyzéseivel, panaszaival kérjük, még itt tartózkodása során forduljon a Recepcióhoz, hogy a felmerült problémát mielőbb orvosolhassuk.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm176.5 64.3C196.1 302.1 223.8 288 256 288s59.9 14.1 79.5 32.3C354.5 338.1 368 362 368 384c0 5.4-2.7 10.4-7.2 13.4s-10.2 3.4-15.2 1.3l-17.2-7.5c-22.8-10-47.5-15.1-72.4-15.1s-49.6 5.2-72.4 15.1l-17.2 7.5c-4.9 2.2-10.7 1.7-15.2-1.3s-7.2-8-7.2-13.4c0-22 13.5-45.9 32.5-63.7zm-43-173.6l89.9 47.9c10.7 5.7 10.7 21.1 0 26.8l-89.9 47.9c-7.9 4.2-17.5-1.5-17.5-10.5c0-2.8 1-5.5 2.8-7.6l36-43.2-36-43.2c-1.8-2.1-2.8-4.8-2.8-7.6c0-9 9.6-14.7 17.5-10.5zM396 157.1c0 2.8-1 5.5-2.8 7.6l-36 43.2 36 43.2c1.8 2.1 2.8 4.8 2.8 7.6c0 9-9.6 14.7-17.5 10.5l-89.9-47.9c-10.7-5.7-10.7-21.1 0-26.8l89.9-47.9c7.9-4.2 17.5 1.5 17.5 10.5z"/></svg>
+                
+            </div>
+
+
+            <div class="card dark">
+                <h1>Közérdekű telefonszámok:</h1>
+                <p>Mentők: 104 <br>
+                    Rendőrség: 107 <br>
+                    Tűzoltók: 105 <br>
+                    Recepció: 100 7:00 – 22:00 <br>
+                    Éjszakai recepció: 120 22:00 – 7:00
+                    </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+
+                
+            </div>
+
+            <div class="card empty"></div>
+
+            
+            <div class="card dark">
+                <h1>Vészkijárat</h1>
+                <p>A szobában elhelyezett menekülési útvonalon találja meg a szobájához legközelebb eső vészkijáratot.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M64 64l224 0 0 9.8c0 39-23.7 74-59.9 88.4C167.6 186.5 128 245 128 310.2l0 73.8s0 0 0 0H64V64zm288 0l224 0V384H508.3l-3.7-4.5-75.2-90.2c-9.1-10.9-22.6-17.3-36.9-17.3l-71.1 0-41-63.1c-.3-.5-.6-1-1-1.4c44.7-29 72.5-79 72.5-133.6l0-9.8zm73 320H379.2l42.7 64H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48V400c0 26.5 21.5 48 48 48H308.2l33.2 49.8c9.8 14.7 29.7 18.7 44.4 8.9s18.7-29.7 8.9-44.4L310.5 336l74.6 0 40 48zm-159.5 0H192s0 0 0 0l0-73.8c0-10.2 1.6-20.1 4.7-29.5L265.5 384zM192 128a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+<footer>
+
+
+
+        <p>
+            Baratim Kft. 2023 ©
+            <br>
+            Minden jog fenntartva!
+            <br>
+            Készítette: Eördögh Döme
+        </p>
+
+        <div id="socialicons">
+
+
+        <a href="tel:+36 36 428 950">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+            +36 36 428 950
+        </a>
+        
+        
+
+        <a href="mailto:bacchuspanzio@t-online.hu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+            bacchuspanzio@t-online.hu
+        </a>
+
+        
+
+        <a href="https://goo.gl/maps/npfFQoNSEsL5QTjp8">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+        3300 Eger, Szépasszony-völgy u. 29.
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100064209871832">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+            Bacchus Panzió
+        </a>
+
+        </div>
+
+
+
+        
+
+    </footer>
+
+
+
+
+    <upicon id="upicon">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+        </a>
+
+
+    </upicon>
+
+
+
+</body>
+</html>
