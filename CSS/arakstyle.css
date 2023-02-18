@@ -36,6 +36,9 @@
     width: 70%;
 }
 
+table {
+    font-size: 1.7rem;
+}
 
 #roomprices tr {
     height: 2rem;
