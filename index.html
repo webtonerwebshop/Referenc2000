@@ -206,15 +206,14 @@
 
                 
 
-            </div>
-
+            <!--
             <div class="card dark" id="feedback-card">
                 <div class="feedback-slider-container" id="c1">
                     <p class="feedback">"Fantasztikus volt a szállás. Nagyon finom bőséges ételek, kedves felszolgálók, bőséges nagyon finom ételek! Szép kényelmes szobák! Köszönjük, hogy ott tölthettünk pár napot! 😍❤️"</p>
                     <p class="feedback-name">Erzsébet</p>
                 </div>
 
-                <!--
+                
                 <div class="feedback-slider-container" id="c2">
                     <p class="feedback">"Nagyon segítőkészek voltak csak ajánlani tudom mindenkinek"</p>
                     <p class="feedback-name">Katalin</p>
@@ -232,7 +231,58 @@
                     <p class="feedback-name">Natália</p>
                 </div>
                 -->
+        </div>       
+            <div class="card dark">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="textbox">
+                        <p>"Fantasztikus volt a szállás. Nagyon finom bőséges ételek, kedves felszolgálók, bőséges nagyon finom ételek! Szép kényelmes szobák! Köszönjük, hogy ott tölthettünk pár napot! 😍❤️"</p>
+                      </div>
+                      <div class="text">Erzsébet</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="textbox">
+                          <p>"Nagyon segítőkészek voltak csak ajánlani tudom mindenkinek"</p>
+                        </div>
+
+                        <div class="text">Katalin</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="textbox">
+                          <p>"Nagyon kedves volt a személyzet,motorral érkeztünk,csurom vizesen elázva,rögtön felajánlották,hogy megszárítják a ruháinkat,mind a recepciós hölgy(Kitti)s a szoba néni,és a többiek is nagyon kedvesek voltak,és mi nagyon szeretnénk valamikor legközelebb kicsit hosszabb ideig nálatok maradni. Üdvözlettel: Ricsi&Icus;,puszi nektek!"</p>
+                        </div>
+                        <div class="text">Erzsébet</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="textbox">
+                          <p>"Nagyon kedves és segítőkész volt a személyzet. A hely álomszép. Gyönyörű kert. Tágas, tiszta apartman. A Jakuzzi a szobában teli találat. Felejthetetlenné tette a gyerekek számára ezt a hétvégét. A reggeli finom, változatos. Nagyon jó helyen is van. 11 pontot is adnék minden szempontra, ha lehérne. Jövünk még ide ;)"</p>
+                        </div>
+                        <div class="text">Rita</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="textbox">
+                          <p>"Nagyon köszönjük a rendkívül figyelmes és kedves személyzet munkáját! Ha Egerben járunk, ismét visszatérünk, illetve ajánljuk mindenkinek!"</p>
+                        </div>
+                        <div class="text">Natália</div>
+                    </div>
+
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
             </div>
+
+
 
         </div>
 
@@ -256,7 +306,28 @@
     </main>
 
 
-
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 10000); // Change image every x seconds
+        }
+        </script>
+        
 
 
 
