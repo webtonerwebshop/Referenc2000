@@ -34,10 +34,11 @@
 
 #description p {
     color: var(--black);
-    padding: 0 2rem;
+    padding: 2rem;
     margin: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 550;
+    line-height: 2.5rem;
 }
 
 #description {
@@ -46,8 +47,8 @@
 }
 
 .card h1 {
-  font-size: 3rem;
-  text-align: center;
+    font-size: 3rem;
+    text-align: center;
 }
 
 
@@ -152,6 +153,28 @@
 
 
 #segment2 {
-  margin: 15rem 0 30rem 0;
+  margin: 15rem 0 5rem 0;
 }
 
+
+.card svg {
+    padding: 2rem;
+}
+
+.light svg {
+    fill: var(--darkgreen);
+}
+
+.dark svg {
+    fill: var(--light);
+}
+
+
+.card p {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+#segment3 {
+    margin-bottom: 30rem;
+}
