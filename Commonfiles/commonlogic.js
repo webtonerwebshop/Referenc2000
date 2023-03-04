@@ -44,7 +44,7 @@ function navdisplay_services() {
 
 
 
-//Upicon displayment
+//Upicon display
 
 window.addEventListener("scroll", upicondisplay);
 
